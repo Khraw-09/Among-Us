@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Among Us</title>
+    <link rel="stylesheet" href="amongUs.css" />
+  </head>
+  <body>
+    <div class="impCountContainer">
+      <input
+        type="number"
+        min="1"
+        max="2"
+        class="impCountInput"
+        placeholder="Enter the No. of Imposter"
+      />
+    </div>
+    <div class="neuCountContainer">
+      <input
+        type="text"
+        min="3"
+        max="6"
+        class="nueCountInput"
+        placeholder="Enter the No. of Neutrals (3 to 6)"
+      />
+    </div>
+    <div class="inputContainer">
+      <div class="NOPsContainer">
+        <label class="NOPLabel">Enter the No. of Players:</label>
+        <input class="NOPsInput" type="number" onkeydown="check(event)" />
+        <button class="NOPsButton">Confirm</button>
+      </div>
+      <div class="nameContainer"></div>
+    </div>
+
+    <h1></h1>
+
+    <div class="draftContainer"></div>
+
+    <div class="dataContainer"></div>
+
+    <script src="amongUs.js"></script>
+  </body>
+</html>

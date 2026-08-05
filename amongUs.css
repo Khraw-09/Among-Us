@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background: linear-gradient(
+    to top left,
+    rgb(5, 5, 144),
+    rgb(143, 5, 5),
+    rgb(11, 88, 11)
+  );
+  padding-top: 20px;
+  color: lime;
+  letter-spacing: 2px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.impCountContainer,
+.neuCountContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.impCountContainer input,
+.neuCountContainer input {
+  padding: 5px 10px;
+  width: 200px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.NOPsContainer {
+  margin-bottom: 20px;
+}
+.NOPLabel {
+  font-size: 20px;
+}
+
+.nameInputContainer {
+  display: flex;
+  column-gap: 5px;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.draftContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.choiceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease;
+  padding: 20px;
+}
+.displayContainer {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 300px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.proceedBtn {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  height: 30px;
+  width: 100px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+.proceedBtn.proceedImp {
+  border-color: red;
+  color: red;
+}
+.proceedBtn.proceedNeu {
+  border-color: gray;
+  color: gray;
+}
+.proceedBtn.proceedCre {
+  border-color: cyan;
+  color: cyan;
+}
+
+.roleGroup,
+.queMark {
+  font-weight: 800;
+  margin: 20px;
+}
+.role {
+  margin-top: 20px;
+}
+
+.choice4 {
+  border-color: lime;
+}
+
+.impContainer {
+  border-color: red;
+}
+.impContainer .roleGroup {
+  color: red;
+}
+
+.neuContainer {
+  border-color: gray;
+}
+.neuContainer .roleGroup {
+  color: gray;
+}
+
+.creContainer {
+  border-color: cyan;
+}
+.creContainer .roleGroup {
+  color: cyan;
+}
+
+.choiceContainer .queMark,
+.choiceContainer .randomNote {
+  color: lime;
+}
+
+.queMark {
+  margin-top: 0px;
+  font-size: 50px;
+}
+
+.choiceContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+.impContainer .roleInfo {
+  color: red;
+}
+.neuContainer .roleInfo {
+  color: gray;
+}
+.creContainer .roleInfo {
+  color: cyan;
+}
+.roleInfo {
+  margin: 20px;
+  font-size: 30px;
+}
+.desc {
+  margin: 30px 10px;
+}
+
+.dataContainer {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+}
+.neutralContainer,
+.killerContainer,
+.crewContainer {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  background-color: black;
+  color: white;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.killerContainer {
+  border-color: red;
+}
+.killerContainer .title {
+  color: red;
+}
+
+.neutralContainer {
+  border-color: gray;
+}
+.neutralContainer .title {
+  color: gray;
+}
+
+.crewContainer {
+  border-color: cyan;
+}
+.crewContainer .title {
+  color: cyan;
+}
