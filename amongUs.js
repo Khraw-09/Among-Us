@@ -171,6 +171,7 @@ const listOfCrewmates = [
   "Hitman",
   "Survivor",
   "Glitch",
+  "Judge",
   "Crewmate",
 ];
 
@@ -202,6 +203,7 @@ const listOfAllRoles = [
   "Mayor",
   "Hitman",
   "Survivor",
+  "Judge",
   "Crewmate",
 ];
 
@@ -981,6 +983,24 @@ function getRoleInfo(name, role) {
     mainCon.appendChild(inner);
 
     return "Im mar-shiteng game ban tip ia ki IMPOSTER.";
+  }
+  if (role === "Judge") {
+    mainCon.classList.add("crewContainer");
+    dataEl.appendChild(mainCon);
+
+    mainCon.appendChild(lab);
+    mainCon.appendChild(inner);
+
+    const innerLabel = document.createElement("label");
+    innerLabel.classList.add("innerLabel");
+    innerLabel.textContent = "Judge:";
+    inner.appendChild(innerLabel);
+
+    const input1 = document.createElement("input");
+    input1.classList.add("inputEl");
+    inner.appendChild(input1);
+
+    return "Beh ia ki Imposter lane ia u Activist ha ka Meeting. Lada phi bakla phi shah beh ialade.";
   }
   if (role === "Crewmate") {
     mainCon.classList.add("crewContainer");
